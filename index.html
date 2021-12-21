@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+    <script src="js/myfunctions.js"></script>
+    <title>to do list</title>
+</head>
+
+<body>
+
+<div class="container-fluid p-0  text-center">
+    <img src="images/to_do.jpg" class="img-fluid" alt="to do">
+</div>
+
+<div class="container-fluid p-2 bg-dark text-center" id="buttons">
+    <button type="button" class="btn btn-primary" id="short">sort</button>
+    <button type="button" class="btn btn-primary" id="highPriority">high priority</button>
+    <button type="button" class="btn btn-primary d-none" id="showAll">show all</button>
+    <button type="button" class="btn btn-primary" id="newTask">new task</button>
+
+</div>
+
+
+<div class="container-fluid d-none" id="inputArea">
+    <label for="titleInput" class="form-label">Title</label>
+    <input type="text" class="form-control" id="titleInput" placeholder="enter title here">
+    <label for="descriptionInput" class="form-label">Description</label>
+    <input type="text" class="form-control" id="descriptionInput" placeholder="enter description here">
+    <input type="checkbox" value="" id="priorityInput" required>
+    <label for="priorityInput">High Priority</label>
+    <div class="text-center">
+        <button type="button" class="btn btn-primary" id="add">Add</button>
+        <button type="button" class="btn btn-primary" id="back">back</button>
+    </div>
+
+    <div class="row" id="error">
+
+    </div>
+</div>
+
+<div class="container-fluid p-5 bg-light">
+    <div class="row" id="taskList">
+    </div>
+</div>
+</body>
+</html>
